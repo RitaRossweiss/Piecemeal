@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/caiDan.js"></script>
+<title>天在水—知识资源聚合小站</title>
+	<style>
+	body{
+		/*设置高斯模糊背景图，秉承一贯作风，上学期用烂的套路*/
+			background-image: url("img/Home/背景.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		
+		#wrapper-box{
+			/*计算盒子高度和宽度，还是计算器好使啊*/
+			width: 1100px;
+			height: 750px;
+			/*设置一个圆角框框，并添加阴影，最后发现根本没必要去搞边角弧度，忙活一会又改回来了*/
+			border: 3px solid;
+			border-radius: 3px;
+			box-shadow: 10px 15px 30px ;
+			/*自动化，设置水平居中*/
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/*这个图片说实话放在引导首页有点不搭，但我是不会改的,对，就是不改  */
+		#re-2{
+			background-image: url("img/Home/首页图片.png");
+			background-size: cover;
+		}
+		
+		
+	</style>
+	<!--鼠标经过图像，dw自带简单的js-->
+	<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+
+<body onLoad="MM_preloadImages('img/Home/开发者.png','img/Home/信息系首页.png','img/Home/软件.png','img/Home/硬件.png')">
+	
+<div id="wrapper-box">
+	
+<!--第一个表格融入背景色，注入灵魂，知乎上的励志名言一搜一大堆-->		
+<table width="1100" height="40" border="0"  bgcolor="161616" >
+  <tbody>
+    <tr style="color: #FFFFFF">
+      <td><strong>&nbsp;WELCOME TO OUR WEDSITE !</strong></td>
+      <td align="right" ><strong>我们的极限也许是别人的起点&nbsp;</strong></td>
+    </tr>
+  </tbody>
+</table>
+<!--第二个表格融入背景色,是不是有点多余呢？-->		
+<table width="1100" height="30" border="0" bgcolor="285fe7">
+  <tbody>
+    <tr style="color: #FFFFFF">
+     <td>&nbsp;</td>
+	<td align="right">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--第三个表格，放入首页图片-->
+<table id="re-2" width="1100" height="500">
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<!--第四个表格，分为颜色不同的四块，在这里留下两条透明表格备用，万一哪天我脑子抽了又想改成别的-->
+<table width="1100" height="10" cellspacing="0">
+  <tbody>
+    <tr>
+      <!--<td bgcolor="e2327c"></td>
+      <td bgcolor="2d2d2d"></td>
+	  <td bgcolor="d5b50f"></td>
+      <td bgcolor="038ad5"></td>-->
+    </tr>
+  </tbody>
+</table>
+		
+<!--第五个表格，四个按钮布局，注入灵魂-->
+		
+		<table width="1100" height="120" cellspacing="0">
+  <tbody>
+    <tr style="color: #FFFFFF" align="center">
+		
+    <td bgcolor="#161616"><a href="别看了，我做过处理的" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','img/Home/信息系首页.png',1)"><img src="img/Home/信息系首页-灰度.png" alt="" width="72" height="72" id="Image2"></a><br><strong>系部首页</strong></td>
+		
+    <td bgcolor="#2d2d2d"><a href="Subpage/geeksPage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','img/Home/硬件.png',1)"><img src="img/Home/硬件-灰度.png" alt="" width="72" height="72" id="Image4"></a><br><strong>极客硬件</strong></td>
+		
+	  
+    <td bgcolor="#161616"><a href="Subpage/navgationPage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','img/Home/软件.png',1)"><img src="img/Home/软件-灰度.png" alt="" width="72" height="72" id="Image3"></a><br><strong>风向导航</strong></td>
+		
+	<td bgcolor="#2d2d2d"><a href="Subpage/developerPage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','img/Home/开发者.png',1)"><img src="img/Home/开发者-灰度.png" alt="" width="72" height="72" id="Image1"></a><br><strong>制作成员</strong></td>
+		
+    </tr>
+  </tbody>
+</table>
+<!--第四个表格的复制体嘤嘤嘤-->
+<table width="1100" height="10" cellspacing="0">
+  <tbody>
+    <tr>
+      <!--<td bgcolor="e2327c"></td>
+      <td bgcolor="2d2d2d"></td>
+	  <td bgcolor="d5b50f"></td>
+      <td bgcolor="038ad5"></td>-->
+    </tr>
+  </tbody>
+</table>
+<!--第六个表格，尾部，为美好的比赛献上祝福，首页到此完工，不知道其他人做的怎么样了-->
+		
+<table width="1100" height="40" border="0"  bgcolor="161616" >
+  <tbody>
+    <tr style="color:#8B8B8B">
+      <td align="center"><strong>制作组 © 四等分的咸鱼 | 为美好的比赛献上祝福</strong></td>
+    </tr>
+  </tbody>
+</table>
+		
+</div>
+</body>
+</html>

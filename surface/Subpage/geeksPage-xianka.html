@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>极客硬件-显卡</title>
+</head>
+<style>
+	
+	/*导航栏，蓝色和导航页呼应*/
+	#header{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		height: 60px;
+		padding: 0px;
+		background: #265ce6;
+	}
+	
+	/*装饰条，实际上没啥意义，就是觉得好看些，和鼠标触发的颜色还挺搭配，就留下了*/
+	#header2{
+		width:100%;
+		position:fixed;
+		z-index:100;
+		top: 1;
+		left: 0;
+		height: 40px;
+		margin: 53px 0 0;
+		padding: 0px;
+		background: #2d68dd;
+	}
+	
+	/*妈耶，又是令人头痛的logo，今天到此为止，明天给这加动画*/
+	#logo{
+		width: 8%;
+		height: 56px;
+	}
+	
+	/*Heil引导，你可以了解到什么,真是能力有限啊，俩仨小时才搞定*/
+	#msg{
+		width: 100%;
+		height: 380px;
+		color: #FFFFFF;
+		text-align:center;
+		margin-top: 100px;
+		position: absolute;
+		left: 0px;
+		top: 2px;
+		background: linear-gradient(#265ce6,#2d68dd);
+	}
+	
+	
+	#content{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 475px;
+		left: 0;
+		text-align: center;
+		background: linear-gradient(#265ce6,#1e1032);
+	}
+	
+	/*字*/
+	#content-1{
+		font-size: 72px;
+		position: relative;
+	}
+	
+	/*显卡天梯图*/
+	#content-img{
+		position: relative;
+	}
+	
+	/*“首页”的定位，就放在logo下面*/
+	p{
+		position: fixed;
+		top: 40px;
+		z-index: 100;
+		font-size: 24px;
+		left: 1.25%;
+	}
+	
+	/*没有点链接的时候*/
+	a:link{
+			color: #ffffff;
+			text-decoration: none;
+		}
+	
+	/*鼠标放上去时*/
+	a:active{
+		color: #ffd500;
+	}
+	
+	/*点击链接的一瞬间*/
+	a:active{
+		color: #ffd500;
+	}
+	
+	/*导航栏*/
+	ul {
+		list-style-type: none;
+		margin: 15px 0 0;
+		padding: 0;
+		overflow: hidden;
+		border: px solid #e7e7e7;
+		float: right;
+	}	
+
+	/*导航栏，块级元素效果*/
+	li {
+		float: left;
+		text-align: center;
+		list-style: none;
+		color: #ffffff;
+	}
+
+	li a {
+		display: block;
+		color: #ffffff;
+		text-align: center;
+		padding: 5px 6px;
+		text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #5cadf7;
+	}
+
+	li a.active {
+		color: white;
+		background-color: #4CAF50;
+	}
+	
+	/*地址栏，嗯哼*/
+	#copyright{
+		width: 100%;
+		font-size: 12px;
+		text-align: center;
+		left: 0;
+		position: absolute;
+		top: 2583px;
+		background: #1565co;
+		color: #ffffff;
+		border-top: 1px solid #ffffff;
+		background: linear-gradient(#1e1032,#2b39b4);
+	}
+	
+	/*终于代码规范完成*/
+
+</style>
+
+<body>
+	
+<div id="header">
+	<ul>
+		<li><a href="../guidePages.html">导航页</a></li>
+		<li><a href="geeksPage.html">极客硬件</a></li>
+		<li><a href="geeksPage-xianka.html">显卡</a></li>
+		<li><a href="geeksPage-chuliqi.html">处理器</a></li>
+	</ul>
+	<div id="logo">
+		<a href="../guidePages.html" ><img src="../img/hardware/logo-1.png"/></a>
+	</div>
+</div>
+	
+<div id="header2"><p><a href="geeksPage.html">首页</a></p>
+	<table width="1100" height="40" border="0"  style="margin: auto">
+    <tbody>
+   		<tr style="color: #FFFFFF">
+		  <td><strong>&nbsp;WELCOME TO OUR WEDSITE !</strong></td>
+		  <td align="right" ><strong>我们的极限也许是别人的起点&nbsp;</strong></td>
+    	</tr>
+    </tbody>
+    </table>
+</div>
+	
+<table id="msg">
+    <tr>
+		<td style="font-size: 120px">Heil!!</td>
+	</tr>
+	<tr>
+	  <td style="font-size: 48px">在这里可以了解到硬件的基础信息</td>
+    </tr>
+</table>
+	
+<table id="content">
+	<tr>
+		<td id="content-1">2019年5月显卡天梯排行榜</td>
+	</tr>
+	<tr>
+		<td id="content-img"><img src="../img/hardware/显卡梯图1.jpg" width="1000"></td>
+	</tr>
+</table>
+
+<table id="copyright">
+	<tr>
+		<td>
+			<th>制作组 © 移动应用开发 1813 | 四等分</th>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

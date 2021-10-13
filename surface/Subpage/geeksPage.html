@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>天在水-极客导航</title>
+</head>
+
+<style>
+	
+	/*导航栏，蓝色呼应*/
+	#header{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		height: 60px;
+		padding: 0px;
+		background: #265ce6;
+	}
+	
+	/*迎合一下子*/
+	#header2{
+		width:100%;
+		position:fixed;
+		z-index:100;
+		top: 1;
+		left: 0;
+		height: 40px;
+		margin: 53px 0 0;
+		padding: 0px;
+		background: #2d68dd;
+	}
+	
+	/*导航栏*/
+	ul {
+		list-style-type: none;
+		margin: 15px 0 0;
+		padding: 0;
+		overflow: hidden;
+		border: px solid #e7e7e7;
+		float: right;
+	}	
+
+	/*导航栏，块级元素效果*/
+	li {
+		text-align: center;
+		list-style: none;
+		color: #ffffff;
+	}
+
+	li a {
+		display: block;
+		color: #ffffff;
+		text-align: center;
+		padding: 5px 6px;
+		text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #5cadf7;
+	}
+
+	li a.active {
+		color: white;
+		background-color: #4CAF50;
+	}
+	
+	/*“首页”的定位，就放在logo下面*/
+	p{
+		position: fixed;
+		top: 40px;
+		z-index: 100;
+		font-size: 24px;
+		left: 1.25%;
+	}
+	
+	/*没点的链接*/
+	a:link{
+			color: #ffffff;
+			text-decoration: none;
+		}
+	
+	/*鼠标放上去时*/
+	a:hover{
+		color: #ffffff;
+		text-decoration: underline;
+	}
+	
+	/*点击链接的一瞬间*/
+	a:active{
+		color: #ffd500;
+	}
+	
+	/*妈耶，又是令人头痛的logo，今天到此为止，明天给这加动画*/
+	#logo{
+		width: 8%;
+		height: 56px;
+	}
+	
+	/*Heil引导，你可以了解到什么,真是能力有限啊，俩仨小时才搞定*/
+	#msg{
+		width: 100%;
+		height: 380px;
+		background: linear-gradient(#265ce6,#2d68dd);
+		color: #FFFFFF;
+		text-align:center;
+		margin-top: 100px;
+		position: absolute;
+		left: 0px;
+		top: 2px;
+	}
+	
+	/*破内容，唉~*/
+	#content{
+		width: 100%;
+		height: 1000px;
+		position: absolute;
+		background: linear-gradient(#5cadf7,#265ce6);
+		top: 482px;
+		left: 0;
+	}
+	
+	/*就那点东西，介绍一下子*/
+	#column{
+		position: absolute;
+		left: 0;
+		top: 1500px;
+		width: 100%;
+		height: auto;
+		margin: auto;
+		background: linear-gradient(#265ce6,#1e1032);
+		color: #ffffff;
+	}
+	
+	/*介绍介绍*/
+	#column-z{
+		font-size: 24px;
+		text-align: center;
+		margin: auto;
+		height: auto;
+		color: #ffffff;
+	}
+	
+	/*卡片响应哦*/
+	div.img {
+		font-size: 36px;
+		float: left;
+		width: 450px;
+	}
+
+	div.img:hover {
+		border: 1px solid #ffffff;
+	}
+
+	div.img img {
+		width: 100%;
+		height: 348px;
+	}
+	
+	/*地址栏，啧啧*/
+	#copyright{
+		width: 100%;
+		font-size: 12px;
+		text-align: center;
+		left: 0;
+		position: absolute;
+		top: 4029px;
+		background: #1565co;
+		color: #ffffff;
+		border-top: 1px solid #ffffff;
+		background: linear-gradient(#1e1032,#2b39b4);
+	}
+	
+	/*代码规范完成，yes*/
+	
+</style>
+	
+<body>
+	
+<div id="header">
+	<ul>
+		<li style="float: right"><a href="geeksPage-chuliqi.html">处理器</a></li>
+		<li style="float: right"><a href="geeksPage-xianka.html">显卡</a></li>
+		<li style="float: right"><a href="geeksPage.html">极客硬件</a></li>
+		<li style="float: right"><a href="../guidePages.html">导航页</a></li>
+	</ul>
+	<div id="logo">
+		<a href="../guidePages.html" ><img src="../img/hardware/logo-1.png"/></a>
+	</div>
+</div>
+	
+<div id="header2"><p><a href="geeksPage.html">首页</a></p>
+	<table width="1100" height="40" border="0"  style="margin: auto">
+  	<tbody>
+		<tr style="color: #FFFFFF">
+		  <td><strong>&nbsp;WELCOME TO OUR WEDSITE !</strong></td>
+		  <td align="right" ><strong>我们的极限也许是别人的起点&nbsp;</strong></td>
+		</tr>
+  	</tbody>
+	</table>
+</div>
+	
+<table id="msg">
+    <tr>
+		<td style="font-size: 120px">Heil!!</td>
+	</tr>
+	<tr>
+	  <td style="font-size: 48px">在这里可以了解到硬件的基础信息</td>
+    </tr>
+</table>
+
+<table id="content">
+	<tr>
+		<td width="480">&nbsp;</td>
+		<td width="520">
+			<ul style="font-size: 24px">
+				<li><b>ROT 枪神2S Plus--移动版的性能怪兽</b></li>
+				<li>酷睿i7-8750H处理器 6核心12线程</li>
+				<li>流畅读取运行各类主流大型游戏、3A大作</li>
+				<li>512GB M.2 NVMe PCIe SSD+1TB HDD机械硬盘</li>
+				<li><b>超大存储空间</b></li>
+				<li>读取速度1304MB/S 写入速度991M/S</li>
+				<li><b>享受下载乐趣</b></li>
+				<li>拥有丰富的接口 除基础的插孔之外</li>
+				<li>还搭载了Type-C接口、mini Display Port 1.4接口和1个HDMI 2.0 <b>外设随便连</b></li>
+				<li>一块17.3英寸144Hz 3ms的电竞级IPS屏幕</li>
+				<li><b>性能拔群仍有超频空间</b></li>
+			</ul>
+		</td>
+		<td class="img-zuo"><img src="../img/hardware/右-透明.png" height="500"></td>
+		<td width="500"></td>
+	</tr>
+	<tr>
+		<td width="400"></td>
+		<td width="500" class="img-you"><img src="../img/hardware/左2-透明.png" height="500"></td>
+		<td width="500"> 
+			<ul style="font-size: 24px">
+				<li><b>ROG 枪神2S</b></li>
+				<li>1920×1080分辨率的IPS屏幕 144Hz 的高刷新率</li>
+				<li>六核十二线程 CPU的计算能力</li>
+				<li>GTX 1070显卡 16986分的图形分数</li>
+				<li>512GB PCIe SSD+1TB HDD的混合存储 <b>4K读写速率</b></li>
+				<li><b>出色的散热</b></li>
+				<li>使用了五铜管双风扇的豪华散热模组</li>
+				<li><b>内存频率上限2666MHz</b></li>
+				<li>内置蓝牙5.0与带宽可达 1733MB/s 的 802.11ac 2×2 WAVE 2千兆双频网络 支持MU MIMO</li>
+			</ul>
+		</td>
+		<td width="400">&nbsp;</td>
+	</tr>
+</table>
+	
+<table id="column">
+	<tr>
+		<td width="410">&nbsp;</td>
+		<td id="column-img">
+			<div class="responsive">
+			  <div class="img">
+				<a target="_blank" href= "../img/hardware/显卡-原-透明.png">
+				  <img src= "../img/hardware/显卡-原.-透明.png" alt="图片文本描述" width="300" height="200">
+				</a>
+			  </div>
+			</div>
+		</td>
+		<td id="column-z">
+			显卡：
+			用于将计算机系统所需要的显示信息进行转换驱动显示器
+		</td>
+		<td width="410">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="410">&nbsp;</td>
+		<td id="column-z">
+			处理器=大脑（计算机）
+		</td>
+		<td id="column-img">
+			<div class="responsive">
+			  <div class="img">
+				<a target="_blank" href= "../img/hardware/处理器-原-透明.png">
+				  <img src= "../img/hardware/处理器-原-透明.png" alt="图片文本描述" width="300" height="200">
+				</a>
+			  </div>
+			</div>
+		</td>
+		<td width="410">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="410">&nbsp;</td>
+		<td id="column-img">
+			<div class="responsive">
+			  <div class="img">
+				<a target="_blank" href= "../img/hardware/主板-透明.png">
+				  <img src= "../img/hardware/主板-透明.png" alt="图片文本描述" width="300" height="200">
+				</a>
+			  </div>
+			</div>
+		</td>
+		<td id="column-z">
+			主板：是构成复杂电子系统例如电子计算机的中心或者主电路板
+		</td>
+		<td width="410">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="410">&nbsp;</td>
+		<td id="column-z">
+			内存条：内存扩展（电脑必不可少的东西）
+		</td>
+		<td id="column-img">
+			<div class="responsive">
+			  <div class="img">
+				<a target="_blank" href= "../img/hardware/内存条-原-透明.png">
+				  <img src= "../img/hardware/内存条-原-透明.png" alt="图片文本描述" width="300" height="200">
+				</a>
+			  </div>
+			</div>
+		</td>
+		<td width="410">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="410">&nbsp;</td>
+		<td id="column-img">
+			<div class="responsive">
+			  <div class="img">
+				<a target="_blank" href= "../img/hardware/硬盘-透明.png">
+				  <img src= "../img/hardware/硬盘-透明.png" alt="图片文本描述" width="300" height="200">
+				</a>
+			  </div>
+			</div>
+		</td>
+		<td id="column-z">
+			硬盘是电脑主要的存储媒介之一（主要分为固态硬盘、机械硬盘、混合硬盘）
+		</td>
+		<td width="410">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="410">&nbsp;</td>
+		<td id="column-z">
+			显示器也叫监视器，是属于电脑的I/O设备，即输入输出设备。
+		</td>
+		<td id="column-img">
+			<div class="responsive">
+			  <div class="img">
+				<a target="_blank" href= "../img/hardware/显示器-原-透明.png">
+				  <img src= "../img/hardware/显示器-原-透明.png" alt="图片文本描述" width="300" height="200">
+				</a>
+			  </div>
+			</div>
+		</td>
+		<td width="410">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="410">&nbsp;</td>
+		<td id="column-img">
+			<div class="responsive">
+			  <div class="img">
+				<a target="_blank" href= "../img/hardware/电源-原.png">
+				  <img src= "../img/hardware/电源-原.png" alt="图片文本描述" width="300" height="200">
+				</a>
+			  </div>
+			</div>
+		</td>
+		<td id="column-z">
+			电源是给显卡、处理器、主板等供电用
+		</td>
+		<td width="410">&nbsp;</td>
+	</tr>
+</table>
+	
+<table id="copyright">
+	<tr>
+		<td>
+			<th>制作组 © 移动应用开发 1813 | 四等分</th>
+		</td>
+	</tr>
+</table>
+	
+</body>
+</html>
